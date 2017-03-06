@@ -1,4 +1,4 @@
-var geolib = require('grolib');
+var geolib = require('geolib');
 
 module.exports = {
     isPointInsideCircle : function(point,center,radius){

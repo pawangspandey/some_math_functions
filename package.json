@@ -1,6 +1,6 @@
 {
   "name": "some_math_functions",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "basic math functions",
   "main": "/src/index.js",
   "scripts": {
