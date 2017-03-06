@@ -1,6 +1,6 @@
 {
   "name": "some_math_functions",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "basic math functions",
   "main": "/src/index.js",
   "scripts": {
@@ -15,5 +15,8 @@
   "bugs": {
     "url": "https://github.com/pawangspandey/some_math_functions/issues"
   },
-  "homepage": "https://github.com/pawangspandey/some_math_functions#readme"
+  "homepage": "https://github.com/pawangspandey/some_math_functions#readme",
+  "dependencies": {
+    "geolib": "2.0.22"
+  }
 }
