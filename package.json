@@ -4,8 +4,10 @@
   "description": "basic math functions",
   "main": "src/index.js",
   "scripts": {
-    "commit" : "git-cz",
-    "test": "mocha src/test/**/*.test.js -w"
+    "commit": "git-cz",
+    "test": "mocha src/test/**/*.test.js -w",
+    "test:coverage": "istanbul cover -x src/test/** _mocha -- -R spec src/test/**/*.test.js",
+    "report-coverage" : "cat ./coverage/lcov.info | codecov --token=b12adf2d-72fc-4463-bc72-6d738068aff1"
   },
   "repository": {
     "type": "git",
@@ -23,12 +25,14 @@
     "mocha": "3.2.0"
   },
   "devDependencies": {
+    "codecov.io": "0.1.6",
     "commitizen": "2.9.6",
-    "cz-conventional-changelog": "2.0.0"
+    "cz-conventional-changelog": "2.0.0",
+    "istanbul": "0.4.5"
   },
-  "config":{
-    "commitizen":{
-      "path" : "node_modules/cz-conventional-changelog"
+  "config": {
+    "commitizen": {
+      "path": "node_modules/cz-conventional-changelog"
     }
   }
 }
