@@ -4,7 +4,8 @@
   "description": "basic math functions",
   "main": "src/index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "commit" : "git-cz",
+    "test": "mocha src/test/**/*.test.js -w"
   },
   "repository": {
     "type": "git",
@@ -17,6 +18,17 @@
   },
   "homepage": "https://github.com/pawangspandey/some_math_functions#readme",
   "dependencies": {
-    "geolib": "2.0.22"
+    "chai": "3.5.0",
+    "geolib": "2.0.22",
+    "mocha": "3.2.0"
+  },
+  "devDependencies": {
+    "commitizen": "2.9.6",
+    "cz-conventional-changelog": "2.0.0"
+  },
+  "config":{
+    "commitizen":{
+      "path" : "node_modules/cz-conventional-changelog"
+    }
   }
 }
