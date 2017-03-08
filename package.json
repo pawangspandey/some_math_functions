@@ -1,17 +1,19 @@
 {
   "name": "some_math_functions",
-  "version": "1.0.3",
+  "version": "0.0.0-development",
   "description": "basic math functions",
   "main": "src/index.js",
   "scripts": {
     "commit": "git-cz",
     "test": "mocha src/test/**/*.test.js -w",
+    "test:once": "mocha src/test/**/*.test.js",
     "test:coverage": "istanbul cover -x src/test/** _mocha -- -R spec src/test/**/*.test.js",
-    "report-coverage" : "cat ./coverage/lcov.info | codecov --token=b12adf2d-72fc-4463-bc72-6d738068aff1"
+    "report-coverage": "cat ./coverage/lcov.info | codecov --token=b12adf2d-72fc-4463-bc72-6d738068aff1",
+    "semantic-release": "semantic-release pre && npm publish && semantic-release post"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/pawangspandey/some_math_functions.git"
+    "url": "https://github.com/pawangspandey/some_math_functions.git"
   },
   "author": "pawan <pawang.s.pandey@gmail.com>",
   "license": "MIT",
@@ -28,7 +30,8 @@
     "codecov.io": "0.1.6",
     "commitizen": "2.9.6",
     "cz-conventional-changelog": "2.0.0",
-    "istanbul": "0.4.5"
+    "istanbul": "0.4.5",
+    "semantic-release": "^6.3.2"
   },
   "config": {
     "commitizen": {
